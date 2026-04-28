@@ -11,6 +11,12 @@
 <meta name="robots" content="index, follow">
 <meta name="naver-site-verification" content="6048e65541d749c0d663889e17ed8c1c1832f900" />
 <meta name="google-site-verification" content="m_uBXhRmvOcmBsJH_jNEIZFAJNTDXKCQDRU8F4LEXa0" />
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#f8fbff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Wisdom">
+<link rel="apple-touch-icon" href="/logo.png">
 
 <!-- Open Graph / Kakao / Facebook -->
 <meta property="og:type" content="website">
@@ -27,7 +33,7 @@
 <meta name="twitter:description" content="위즈덤 아카이브의 독창적인 커리큘럼으로 당신만을 위한 맞춤형 지적 성장을 경험하세요.">
 <meta name="twitter:image" content="https://wisdomarchive.kr/logo.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Nanum+Myeongjo:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -90,50 +96,54 @@
                         "full": "9999px"
                     },
                     "fontFamily": {
-                        "headline": ["Plus Jakarta Sans"],
-                        "body": ["Manrope"],
-                        "label": ["Manrope"]
+                        "headline": ["Nanum Myeongjo", "serif"],
+                        "body": ["Nanum Myeongjo", "serif"],
+                        "label": ["Nanum Myeongjo", "serif"],
+                        "serif": ["Nanum Myeongjo", "serif"]
                     }
                 }
             }
         }
     </script>
 <style>
-        body { font-family: 'Manrope', sans-serif; overflow-x: hidden; background-color: #f8fbff; line-height: 1.7; letter-spacing: 0.01em; }
-        .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: -0.01em; }
+        body { font-family: 'Nanum Myeongjo', serif; overflow-x: hidden; background-color: #f8fbff; line-height: 1.7; letter-spacing: 0.01em; }
+        .font-headline { font-family: 'Nanum Myeongjo', serif; letter-spacing: -0.01em; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
         
         .reveal {
             opacity: 0;
-            transform: translateY(40px) scale(0.98);
-            transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+            transform: translateY(60px);
+            transition: all 1.5s cubic-bezier(0.22, 1, 0.36, 1);
         }
         .reveal.active {
             opacity: 1;
-            transform: translateY(0) scale(1);
+            transform: translateY(0);
         }
 
         .reveal-word {
             display: inline-block;
             opacity: 0;
-            transform: translateY(15px);
-            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform: translateY(20px);
+            transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
         .reveal-word.active {
             opacity: 1;
             transform: translateY(0);
         }
 
+        .reveal-delay-1 { transition-delay: 0.2s; }
+        .reveal-delay-2 { transition-delay: 0.4s; }
+        .reveal-delay-3 { transition-delay: 0.6s; }
+
         button, a.btn, .hover-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
         button:hover, .hover-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 40px -15px rgba(0, 95, 175, 0.15);
         }
 
         .soft-overlay {
-            background: linear-gradient(to bottom, rgba(248, 251, 255, 0.1), rgba(248, 251, 255, 0.7) 80%);
+            background: linear-gradient(to bottom, rgba(248, 251, 255, 0.2), rgba(248, 251, 255, 0.9) 90%);
         }
 
         .nav-link {
@@ -163,11 +173,11 @@
 <!-- Top Navigation Bar -->
 <header class="w-full sticky top-0 z-50 bg-[#f8fbff]/80 backdrop-blur-xl border-b border-primary/5">
 <nav class="flex items-center justify-between max-w-7xl mx-auto px-8 h-20">
-<div class="text-2xl font-bold tracking-tighter text-primary flex items-center gap-2">
-<img src="./logo.png" alt="Wisdom Logo" class="w-14 h-14 object-contain">
+<div class="text-base md:text-lg font-bold tracking-widest text-primary flex items-center gap-3">
+<img src="./logo.png" alt="Wisdom Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain">
                 WISDOM
             </div>
-            <div class="hidden md:flex items-center gap-8 text-sm font-bold text-on-surface tracking-wide uppercase">
+            <div class="hidden md:flex items-center gap-10 text-xs font-semibold text-on-surface/80 tracking-[0.15em] uppercase">
                 <a href="#core-values" class="nav-link hover:text-primary transition-colors">Core Values</a>
                 <a href="#director" class="nav-link hover:text-primary transition-colors">Director</a>
                 <a href="#programs" class="nav-link hover:text-primary transition-colors">Philosophy</a>
@@ -176,44 +186,46 @@
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative min-h-[calc(100vh-80px)] flex flex-col justify-center items-center px-8 py-10 text-center overflow-hidden" data-stitch-vh="min-h-[calc(100vh-80px)]===min-h-[90vh]">
+<section class="relative min-h-[calc(100vh-80px)] flex flex-col justify-center items-center px-4 md:px-8 py-6 md:py-10 text-center overflow-hidden" data-stitch-vh="min-h-[calc(100vh-80px)]===min-h-[90vh]">
 <div class="absolute inset-0 z-0">
 <img alt="Abstract Knowledge Illustration" class="w-full h-full object-cover scale-105 opacity-50" src="./hero-bg.png" />
 <div class="absolute inset-0 soft-overlay"></div>
 </div>
-<div class="relative z-10 max-w-5xl reveal">
-<span class="inline-block py-2 px-6 mb-6 rounded-full border-2 border-primary bg-primary text-white text-sm font-extrabold tracking-[0.2em] uppercase shadow-lg backdrop-blur-sm">Intellectual Luxury Archive</span>
-<h1 class="font-headline text-5xl md:text-8xl font-extrabold text-on-surface tracking-tight leading-[1.1] mb-8">
-<span class="reveal-word block mb-1 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">전환의 시대,</span>
-<span class="reveal-word block">판을 읽는 안목</span>
+<div class="relative z-10 max-w-5xl mt-16 md:mt-32">
+<div class="reveal">
+<span class="inline-block py-1.5 px-6 mb-8 rounded-full border border-primary/30 text-primary text-xs font-bold tracking-[0.2em] uppercase backdrop-blur-md">Intellectual Luxury Archive</span>
+</div>
+<h1 class="font-serif text-4xl md:text-7xl font-bold text-on-surface tracking-[-0.02em] leading-loose mb-10 reveal reveal-delay-1">
+<span class="block mb-2 text-on-surface/90">전환의 시대,</span>
+<span class="block">판을 읽는 안목</span>
 </h1>
-<p class="text-base md:text-lg text-on-surface-variant font-medium mb-6 reveal">
+<p class="text-sm md:text-base text-on-surface-variant font-medium mb-12 reveal reveal-delay-2 tracking-wide leading-loose">
 과거의 잣대로는 설명할 수 없는 불확실한 시대.<br/>
-단순한 지식을 넘어 <strong class="text-on-surface font-extrabold text-primary">시대를 관통하는 강력한 도구</strong>, 위즈덤 아카이브가 당신만의 길을 제시합니다.
+단순한 지식을 넘어 <span class="text-primary font-bold">시대를 관통하는 강력한 도구</span>, 위즈덤 아카이브가 당신만의 길을 제시합니다.
 </p>
 
-<div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-8 reveal text-left max-w-4xl mx-auto">
-<div class="flex-1 bg-white/40 backdrop-blur-md px-5 py-4 rounded-xl border border-white/50 shadow-sm hover:-translate-y-1 transition-transform">
-<h3 class="font-bold text-on-surface text-sm mb-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">explore</span> 미래 전망 강연</h3>
-<p class="text-xs text-on-surface-variant font-medium whitespace-nowrap break-keep">혼란 속에서 길을 찾는 명확한 안내서</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-12 reveal reveal-delay-3 text-left w-full">
+<div class="flex-1 bg-white/40 backdrop-blur-xl px-4 py-5 rounded-xl border border-white/40 shadow-sm hover:bg-white/50 transition-colors">
+<h3 class="font-bold text-primary text-sm mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">explore</span> 미래 전망 강연</h3>
+<p class="text-[11px] md:text-xs text-on-surface-variant font-medium whitespace-nowrap tracking-tight">혼란 속에서 길을 찾는 명확한 안내서</p>
 </div>
-<div class="flex-1 bg-white/40 backdrop-blur-md px-5 py-4 rounded-xl border border-white/50 shadow-sm hover:-translate-y-1 transition-transform">
-<h3 class="font-bold text-on-surface text-sm mb-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">visibility</span> 깊은 통찰</h3>
-<p class="text-xs text-on-surface-variant font-medium whitespace-nowrap break-keep">시대의 흐름을 읽어내는 압도적인 안목</p>
+<div class="flex-1 bg-white/40 backdrop-blur-xl px-4 py-5 rounded-xl border border-white/40 shadow-sm hover:bg-white/50 transition-colors">
+<h3 class="font-bold text-primary text-sm mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">visibility</span> 깊은 통찰</h3>
+<p class="text-[11px] md:text-xs text-on-surface-variant font-medium whitespace-nowrap tracking-tight">시대의 흐름을 읽어내는 압도적인 안목</p>
 </div>
-<div class="flex-1 bg-white/40 backdrop-blur-md px-5 py-4 rounded-xl border border-white/50 shadow-sm hover:-translate-y-1 transition-transform">
-<h3 class="font-bold text-on-surface text-sm mb-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">account_balance</span> 강력한 도구</h3>
-<p class="text-xs text-on-surface-variant font-medium whitespace-nowrap break-keep">고전과 과학을 아우르는 완벽한 해석력</p>
+<div class="flex-1 bg-white/40 backdrop-blur-xl px-4 py-5 rounded-xl border border-white/40 shadow-sm hover:bg-white/50 transition-colors">
+<h3 class="font-bold text-primary text-sm mb-2 flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">account_balance</span> 강력한 도구</h3>
+<p class="text-[11px] md:text-xs text-on-surface-variant font-medium whitespace-nowrap tracking-tight">고전과 과학을 아우르는 완벽한 해석력</p>
 </div>
 </div>
-<div class="flex flex-col sm:flex-row justify-center gap-6 reveal">
-<a href="#core-values" class="inline-block bg-primary text-white px-12 py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all">커리큘럼 탐색</a>
+<div class="flex flex-col sm:flex-row justify-center gap-6 reveal reveal-delay-3">
+<a href="#core-values" class="inline-block bg-[#1a2b4c] text-white/90 border border-transparent hover:border-white/20 hover:bg-[#2a3b5c] px-12 py-4 rounded-xl font-medium text-sm tracking-widest shadow-xl transition-all duration-500">커리큘럼 탐색</a>
 </div>
 </div>
 </section>
 <!-- Core Values Section -->
-<section id="core-values" class="py-32 px-8 bg-surface overflow-hidden">
-<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<section id="core-values" class="py-16 md:py-32 px-4 md:px-8 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center">
 <div class="relative group reveal">
 <div class="absolute -top-6 -left-6 w-full h-full bg-primary/5 rounded-xl transition-transform group-hover:scale-105"></div>
 <img alt="Inspiring workspace with natural light" class="rounded-xl relative z-10 w-full object-cover aspect-[4/5] shadow-2xl transition-all duration-1000" src="./section2.png"/>
@@ -227,8 +239,8 @@
 <div class="flex flex-col gap-16 reveal">
 <div>
 <div class="w-16 h-1.5 bg-primary/20 rounded-full mb-8"></div>
-<h2 class="font-headline text-5xl font-extrabold text-on-surface mb-8 tracking-tight leading-tight">핵심 가치: <br/><span class="text-primary">본질에 집중하는 힘</span></h2>
-<p class="text-lg text-on-surface-variant leading-relaxed mb-10 font-medium">
+<h2 class="font-headline text-3xl md:text-5xl font-extrabold text-on-surface mb-8 tracking-tight leading-tight">핵심 가치: <br/><span class="text-primary">본질에 집중하는 힘</span></h2>
+<p class="text-sm md:text-lg text-on-surface-variant leading-relaxed mb-10 font-medium">
                             Wisdom Archive는 시대를 해석하는 통찰력을 바탕으로 교육을 설계합니다. 우리는 삶을 관통하는 세 가지 핵심 기둥을 제공합니다.
                         </p>
 <div class="grid grid-cols-1 gap-6">
@@ -261,11 +273,11 @@
 </div>
 </div>
 </div>
-<div class="bg-primary/5 p-10 rounded-xl border-l-8 border-primary relative overflow-hidden">
+<div class="bg-primary/5 p-8 md:p-10 rounded-xl border-l-8 border-primary relative overflow-hidden">
 <div class="absolute top-0 right-0 p-4 opacity-5">
 <span class="material-symbols-outlined text-9xl">format_quote</span>
 </div>
-<p class="relative z-10 text-primary text-xl italic font-semibold leading-relaxed">
+<p class="relative z-10 text-primary text-[15px] sm:text-lg md:text-xl italic font-semibold leading-relaxed tracking-tight break-keep">
                             "진정한 배움은 정답을 찾는 것이 아니라, <br/>삶이 더 나은 방향을 설계하는 과정입니다."
                         </p>
 </div>
@@ -273,7 +285,7 @@
 </div>
 </section>
 <!-- Director Introduction Section -->
-<section id="director" class="py-32 px-8 bg-surface-container-lowest">
+<section id="director" class="py-16 md:py-32 px-4 md:px-8 bg-surface-container-lowest">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 reveal">
 <div class="w-full md:w-1/3">
 <div class="relative">
@@ -285,23 +297,23 @@
 </div>
 <div class="w-full md:w-2/3">
 <span class="text-primary font-bold text-xs tracking-widest uppercase mb-4 block">Meet Our Leader</span>
-<h2 class="font-headline text-5xl font-extrabold text-on-surface mb-8 tracking-tighter">Wisdom Archive Senior Director</h2>
+<h2 class="font-headline text-3xl md:text-5xl font-extrabold text-on-surface mb-8 tracking-tighter">Wisdom Archive Senior Director</h2>
 <ul class="space-y-4 mb-10">
-<li class="flex items-center gap-4 text-xl font-medium text-on-surface">
+<li class="flex items-center gap-4 text-base md:text-xl font-medium text-on-surface">
 <span class="w-2 h-2 bg-primary rounded-full"></span>
                             현) 위즈덤 아카이브 수석 디렉터
                         </li>
-<li class="flex items-center gap-4 text-xl font-medium text-on-surface">
+<li class="flex items-center gap-4 text-base md:text-xl font-medium text-on-surface">
 <span class="w-2 h-2 bg-primary rounded-full"></span>
                             현) 인문학 및 경전 통합 교육 전문 강사
                         </li>
-<li class="flex items-center gap-4 text-xl font-medium text-on-surface">
+<li class="flex items-center gap-4 text-base md:text-xl font-medium text-on-surface">
 <span class="w-2 h-2 bg-primary rounded-full"></span>
                             현) 한국 자기계발코칭연구소 주임강사
                         </li>
 </ul>
-<div class="p-10 bg-primary/5 rounded-2xl border border-primary/10">
-<p class="text-2xl text-primary font-bold italic leading-relaxed">
+<div class="p-8 md:p-10 bg-primary/5 rounded-2xl border border-primary/10">
+<p class="text-[14px] sm:text-lg md:text-2xl text-primary font-bold italic leading-relaxed tracking-tight break-keep">
                             "고전의 지혜를 삶에 맞게 재해석하고, <br/>현대의 언어로 되살리는 연구를 지속해왔습니다."
                         </p>
 </div>
@@ -309,39 +321,39 @@
 </div>
 </section>
 <!-- Program Highlights (Bento Grid) -->
-<section id="programs" class="py-32 px-8 max-w-7xl mx-auto">
+<section id="programs" class="py-16 md:py-32 px-4 md:px-8 max-w-7xl mx-auto">
 <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal">
 <div class="max-w-2xl">
 <span class="text-primary font-bold text-xs tracking-widest uppercase mb-4 block">Academic Excellence</span>
-<h2 class="font-headline text-6xl font-extrabold text-on-surface mb-6 tracking-tighter">Lecture Philosophy</h2>
-<p class="text-on-surface-variant text-lg font-medium">당신의 삶을 작품으로 만드는 '살아있는 언어'의 기록.</p>
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold text-on-surface mb-6 tracking-tighter">Lecture Philosophy</h2>
+<p class="text-sm md:text-lg text-on-surface-variant font-medium">당신의 삶을 작품으로 만드는 '살아있는 언어'의 기록.</p>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:min-h-[750px]">
-<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-primary-container p-16 flex flex-col justify-end text-on-primary-container reveal hover-card">
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-primary-container p-8 md:p-16 flex flex-col justify-end text-on-primary-container reveal hover-card">
 <img alt="Atmospheric old library with light streaming through windows" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9732w2VI40krxLq4OYsQt-l7cV4ZjaAzrKkyPPpgBpJKvNS43E8_YggERL35AG0GkxxS0MzY2QanJQDXgzOEpnjx8oHL3vjMya2gjzksLjFQOQpDhnbK70sq4nZqGPKT-6Yhh6Ya4_PBEWRfwj0cdU_9-OIA-wPLAHmlDEe-pV86h5-XvH1teAs0c2n3H9UHhw1Z6M8bmu6a05KLiaYQtJhhD61oDWVyU7Tqub7BoZRKz--CTzV3GW9XwkacIG9xjbJID1zukpJ4"/>
 <div class="relative z-10 bg-on-primary-container/10 backdrop-blur-sm p-8 rounded-xl border border-white/10">
 <span class="px-4 py-1.5 bg-white/40 backdrop-blur-md text-primary text-[11px] font-bold rounded-full border border-white/20 tracking-wider">RE-INTERPRETATION</span>
-<h3 class="font-headline text-4xl md:text-5xl font-bold mt-6 mb-6 leading-tight">고전의 현대적 재해석</h3>
-<p class="text-on-primary-container/90 max-w-md text-lg font-medium">딱딱한 경전 속 문장들을 현대인의 심리학과 철학으로 풀어내어, 당신의 삶에 즉시 적용 가능한 지혜를 전달합니다.</p>
+<h3 class="font-headline text-2xl md:text-5xl font-bold mt-6 mb-6 leading-tight">고전의 현대적 재해석</h3>
+<p class="text-on-primary-container/90 max-w-md text-sm md:text-lg font-medium">딱딱한 경전 속 문장들을 현대인의 심리학과 철학으로 풀어내어, 당신의 삶에 즉시 적용 가능한 지혜를 전달합니다.</p>
 </div>
 </div>
-<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-white border border-primary/5 p-10 flex flex-col reveal hover-card shadow-sm">
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-white border border-primary/5 p-6 md:p-10 flex flex-col reveal hover-card shadow-sm">
 <div class="mb-auto">
 <span class="px-3 py-1 bg-primary/5 text-primary text-[10px] font-bold rounded-full tracking-wider border border-primary/10 uppercase">LIVING LANGUAGE</span>
-<h3 class="font-headline text-3xl font-bold text-on-surface mt-6 mb-4">살아있는 언어</h3>
-<p class="text-on-surface-variant text-sm mb-8 font-medium leading-relaxed">단순한 지식 전달을 넘어, 당신의 삶이 하나의 작품이 되도록 방향성과 흐름을 제안하는 ‘살아있는 언어’를 공유합니다.</p>
+<h3 class="font-headline text-2xl md:text-3xl font-bold text-on-surface mt-6 mb-4">살아있는 언어</h3>
+<p class="text-on-surface-variant text-xs md:text-sm mb-8 font-medium leading-relaxed">단순한 지식 전달을 넘어, 당신의 삶이 하나의 작품이 되도록 방향성과 흐름을 제안하는 ‘살아있는 언어’를 공유합니다.</p>
 </div>
 <div class="relative rounded-xl overflow-hidden aspect-video">
 <img alt="Minimalist abstract art representing flow and direction" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA4KHtUvxVzMjynwF7v4bqRVXDYpBGRJZ2NJiOTpn6bfr0EspSoMiCgwDRqObNuv6vbuLLYfWItz2YGFZBDeblqGeRgVn-9IGMrqGjhKRs6YAwHuOjt5O2jn9EHe06DY_OqMDLMBQefRB04g9rq51nGJ7FAYUMJ8dPZxncQ1uiL5u8j5NrHbANQ2Ok5wT2Ym661sLcQQ9BzToMP_ZQtbiIepkcm2w9splVmtQuC0H-6ULTXybWC0zoEdx_IWII_tpJD9s3PJzw-YM"/>
 <div class="absolute inset-0 bg-primary/10"></div>
 </div>
 </div>
-<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-secondary-container p-10 flex flex-col justify-between reveal hover-card">
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-secondary-container p-6 md:p-10 flex flex-col justify-between reveal hover-card">
 <img alt="Personal journal and artifacts on a desk" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGBJE9aSaZPWMhyYs-4ilZzBSjYfc5AUHUQ2DSak0hdta7UcofUTjhAkOxgh5GWsIcUdwOp9cI7N5QcBFx69mFw53e5DT57xPswG-ZoAA5nzL89SLzJQM2nMnNZB9SKQxlpDbKSgfrz5fgSrGYqLUoN7cITT-g8VUwYSt0pXhEra5fAairPI9aE-W-uRDdrI4YdBIKFjVYGzsXsngMri8CcvGUjX1xc0r-VsjILtSHaUpo2lEM3O1pGfP6xY981klV2ZP1Oz5zQiU"/>
 <div class="relative z-10">
-<h3 class="font-headline text-3xl font-bold text-on-secondary-container italic">창조적 아카이빙 (DISCOVERY)</h3>
-<p class="text-on-secondary-container/70 mt-4 text-sm font-medium"><div><span style="font-size: 0.875rem; letter-spacing: 0.01em;">개개인의 삶을 깊이 들여다보고 그 안의 숨겨진 본질과 가치를 발견하여, 기록 이상의 변화를 만듭니다.</span></div></p>
+<h3 class="font-headline text-2xl md:text-3xl font-bold text-on-secondary-container italic">창조적 아카이빙 (DISCOVERY)</h3>
+<p class="text-on-secondary-container/70 mt-4 text-xs md:text-sm font-medium"><div><span style="font-size: inherit; letter-spacing: 0.01em;">개개인의 삶을 깊이 들여다보고 그 안의 숨겨진 본질과 가치를 발견하여, 기록 이상의 변화를 만듭니다.</span></div></p>
 </div>
 <div class="relative z-10 flex justify-between items-center mt-12">
 <span class="text-[10px] font-bold text-on-secondary-container tracking-widest uppercase">DISCOVERY</span>
@@ -350,11 +362,11 @@
 </div>
 </div>
 </div>
-<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-white border border-primary/5 p-16 flex flex-col md:flex-row gap-12 items-center reveal hover-card shadow-sm">
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-white border border-primary/5 p-8 md:p-16 flex flex-col md:flex-row gap-8 md:gap-12 items-center reveal hover-card shadow-sm">
 <div class="flex-1">
 <span class="text-primary font-bold text-[10px] tracking-[0.2em] uppercase">DIRECTING</span>
-<h3 class="font-headline text-4xl font-bold text-on-surface mt-6 mb-6">디렉팅</h3>
-<p class="text-on-surface-variant text-lg font-medium leading-relaxed">우리는 단순한 강사가 아닙니다. <br/>당신의 삶을 함께 설계하고, 고유한 스토리의 흐름을 함께 기획하는 콘텐츠 디렉터로서 존재합니다.</p>
+<h3 class="font-headline text-2xl md:text-4xl font-bold text-on-surface mt-6 mb-6">디렉팅</h3>
+<p class="text-on-surface-variant text-sm md:text-lg font-medium leading-relaxed">우리는 단순한 강사가 아닙니다. <br/>당신의 삶을 함께 설계하고, 고유한 스토리의 흐름을 함께 기획하는 콘텐츠 디렉터로서 존재합니다.</p>
 <button class="mt-10 px-10 py-4 bg-primary/5 text-primary rounded-xl font-bold hover:bg-primary hover:text-white transition-all border border-primary/10">자세히 보기</button>
 </div>
 <div class="w-full md:w-1/2 relative">
@@ -365,20 +377,20 @@
 </div>
 </section>
 <!-- CTA Section -->
-<section class="py-40 px-8">
-<div class="max-w-6xl mx-auto bg-[#002366] rounded-xl p-16 md:p-24 text-center relative overflow-hidden shadow-2xl reveal">
+<section class="py-20 md:py-40 px-4 md:px-8">
+<div class="max-w-6xl mx-auto bg-[#002366] rounded-xl p-8 md:p-24 text-center relative overflow-hidden shadow-2xl reveal">
 <div class="relative z-10">
-<h2 class="font-headline text-5xl md:text-6xl font-extrabold text-white mb-10 leading-tight">당신의 지적 아카이브를<br/><span class="text-primary-fixed italic">지금 시작하세요.</span></h2>
-<p class="text-white/70 text-sm sm:text-base md:text-xl mb-14 mx-auto font-medium whitespace-nowrap break-keep">Wisdom Archive의 독창적인 커리큘럼은 오직 당신만을 위한 지적 성장을 보장합니다.</p>
+<h2 class="font-headline text-2xl sm:text-3xl md:text-6xl font-extrabold text-white mb-8 md:mb-10 leading-snug tracking-tighter">당신의 지적 아카이브를<br/><span class="text-primary-fixed italic">지금 시작하세요.</span></h2>
+<p class="text-white/70 text-xs sm:text-base md:text-xl mb-10 md:mb-14 mx-auto font-medium leading-relaxed px-2 break-words">Wisdom Archive의 독창적인 커리큘럼은<br class="block sm:hidden" /> 오직 당신만을 위한 지적 성장을 보장합니다.</p>
 <div class="flex flex-col sm:flex-row justify-center gap-6">
-<button onclick="openModal()" class="bg-primary text-white px-20 py-6 rounded-xl font-bold text-xl shadow-xl hover:scale-105 transition-transform">문의하기</button>
+<button onclick="openModal()" class="bg-[#1a2b4c] text-white/90 border border-transparent hover:border-white/20 hover:bg-[#2a3b5c] px-16 py-5 rounded-xl font-medium text-base tracking-widest shadow-xl transition-all duration-500">문의하기</button>
 </div>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-20 px-8 mt-auto bg-white border-t border-primary/5 reveal">
+<footer class="w-full py-10 md:py-20 px-4 md:px-8 mt-auto bg-white border-t border-primary/5 reveal">
 <div class="max-w-7xl mx-auto flex flex-col items-center gap-12">
 <div class="flex flex-col items-center gap-10 text-center">
 <div class="flex flex-col items-center">
@@ -731,6 +743,17 @@
                 modal.querySelector('.relative').classList.add('scale-95');
                 document.body.style.overflow = '';
             }
+        }
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(registration => {
+                    console.log('SW registered: ', registration);
+                }).catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError);
+                });
+            });
         }
     </script>
 </body></html>

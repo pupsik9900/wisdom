@@ -1,0 +1,17 @@
+{
+  "name": "Wisdom Archive",
+  "short_name": "Wisdom",
+  "description": "위즈덤 아카이브의 독창적인 커리큘럼으로 당신만을 위한 맞춤형 지적 성장을 경험하세요.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fbff",
+  "theme_color": "#005faf",
+  "icons": [
+    {
+      "src": "./logo.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
