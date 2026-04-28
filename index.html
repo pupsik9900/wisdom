@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html class="light scroll-smooth" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wisdom Archive | Insight for the Era of Transition</title>
+<meta name="description" content="전환의 시대, 판을 읽는 안목. 위즈덤 아카이브에서 독창적인 커리큘럼과 함께 당신만을 위한 지적 성장을 시작하세요.">
+<meta name="keywords" content="위즈덤 아카이브, Wisdom Archive, 온라인 강의, 지적 성장, 커리큘럼, 인사이트, 트렌드, 강연">
+<meta name="author" content="Wisdom Archive">
+<link rel="canonical" href="https://wisdomarchive.kr/">
+<meta name="robots" content="index, follow">
+<meta name="naver-site-verification" content="6048e65541d749c0d663889e17ed8c1c1832f900" />
+<meta name="google-site-verification" content="m_uBXhRmvOcmBsJH_jNEIZFAJNTDXKCQDRU8F4LEXa0" />
+
+<!-- Open Graph / Kakao / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wisdomarchive.kr/">
+<meta property="og:title" content="Wisdom Archive | Insight for the Era of Transition">
+<meta property="og:description" content="전환의 시대, 판을 읽는 안목. 위즈덤 아카이브에서 당신만의 지적 성장을 시작하세요.">
+<meta property="og:image" content="https://wisdomarchive.kr/logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://wisdomarchive.kr/">
+<meta property="twitter:title" content="Wisdom Archive | Insight for the Era of Transition">
+<meta property="twitter:description" content="전환의 시대, 판을 읽는 안목. 위즈덤 아카이브에서 당신만의 지적 성장을 시작하세요.">
+<meta property="twitter:image" content="https://wisdomarchive.kr/logo.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#ffffff",
+                        "background": "#f8fbff",
+                        "surface-container-low": "#f0f4f8",
+                        "on-secondary-fixed": "#001f29",
+                        "on-primary-container": "#001d36",
+                        "surface-variant": "#e0e3e9",
+                        "secondary-fixed-dim": "#89d0ed",
+                        "on-surface": "#1a1c1e",
+                        "surface-dim": "#d9dadb",
+                        "surface-container": "#eff1f3",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "secondary-fixed": "#baeaff",
+                        "surface-container-highest": "#e1e3e4",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "secondary-container": "#d1e4ff",
+                        "surface-tint": "#002366",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "inverse-primary": "#b3c5ff",
+                        "on-tertiary-fixed": "#390b00",
+                        "on-surface-variant": "#44474e",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#d1e4ff",
+                        "inverse-surface": "#2e3132",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c4c6d0",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#00174a",
+                        "surface-container-high": "#e2e2e6",
+                        "surface": "#f8fbff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-secondary-container": "#001f29",
+                        "primary": "#005faf",
+                        "secondary": "#535f70",
+                        "on-tertiary-container": "#d37758",
+                        "on-error-container": "#93000a",
+                        "outline": "#74777f",
+                        "tertiary": "#6b5778",
+                        "on-secondary-fixed-variant": "#004d62",
+                        "on-background": "#1a1c1e",
+                        "surface-bright": "#f8fbff",
+                        "on-tertiary-fixed-variant": "#783018",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#dbe1ff",
+                        "tertiary-container": "#f2daff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; overflow-x: hidden; background-color: #f8fbff; line-height: 1.7; letter-spacing: 0.01em; }
+        .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: -0.01em; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px) scale(0.98);
+            transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .reveal-word {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal-word.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        button, a.btn, .hover-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        button:hover, .hover-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(0, 95, 175, 0.15);
+        }
+
+        .soft-overlay {
+            background: linear-gradient(to bottom, rgba(248, 251, 255, 0.1), rgba(248, 251, 255, 0.7) 80%);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #005faf;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .blob-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-inset-4{inset:-1rem}.inset-0{inset:0px}.-bottom-8{bottom:-2rem}.-left-6{left:-1.5rem}.-right-8{right:-2rem}.-top-6{top:-1.5rem}.right-0{right:0px}.top-0{top:0px}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-14{margin-bottom:3.5rem}.mb-2{margin-bottom:0.5rem}.mb-20{margin-bottom:5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mb-auto{margin-bottom:auto}.ml-auto{margin-left:auto}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-20{margin-top:5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-auto{margin-top:auto}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-\[3\/4\]{aspect-ratio:3/4}.aspect-\[4\/5\]{aspect-ratio:4/5}.aspect-video{aspect-ratio:16 / 9}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-auto{height:auto}.h-full{height:100%}.min-h-\[921px\]{min-height:921px}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-10{gap:2.5rem}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-2{gap:0.5rem}.gap-24{gap:6rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:2rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l-8{border-left-width:8px}.border-t{border-top-width:1px}.border-primary{--tw-border-opacity:1;border-color:rgb(0 95 175 / var(--tw-border-opacity, 1))}.border-primary\/10{border-color:rgb(0 95 175 / 0.1)}.border-primary\/5{border-color:rgb(0 95 175 / 0.05)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-\[\#002366\]{--tw-bg-opacity:1;background-color:rgb(0 35 102 / var(--tw-bg-opacity, 1))}.bg-\[\#f8fbff\]\/80{background-color:rgb(248 251 255 / 0.8)}.bg-on-primary-container\/10{background-color:rgb(0 29 54 / 0.1)}.bg-primary{--tw-bg-opacity:1;background-color:rgb(0 95 175 / var(--tw-bg-opacity, 1))}.bg-primary-container{--tw-bg-opacity:1;background-color:rgb(209 228 255 / var(--tw-bg-opacity, 1))}.bg-primary\/10{background-color:rgb(0 95 175 / 0.1)}.bg-primary\/20{background-color:rgb(0 95 175 / 0.2)}.bg-primary\/5{background-color:rgb(0 95 175 / 0.05)}.bg-secondary-container{--tw-bg-opacity:1;background-color:rgb(209 228 255 / var(--tw-bg-opacity, 1))}.bg-surface{--tw-bg-opacity:1;background-color:rgb(248 251 255 / var(--tw-bg-opacity, 1))}.bg-surface-container{--tw-bg-opacity:1;background-color:rgb(239 241 243 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/40{background-color:rgb(255 255 255 / 0.4)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-primary{--tw-gradient-from:#005faf var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 95 175 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-secondary{--tw-gradient-to:#535f70 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-10{padding:2.5rem}.p-16{padding:4rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-14{padding-left:3.5rem;padding-right:3.5rem}.px-20{padding-left:5rem;padding-right:5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-32{padding-top:8rem;padding-bottom:8rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-40{padding-top:10rem;padding-bottom:10rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pt-10{padding-top:2.5rem}.text-center{text-align:center}.font-body{font-family:Manrope}.font-headline{font-family:Plus Jakarta Sans}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-9xl{font-size:8rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[1\.1\]{line-height:1.1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-\[0\.3em\]{letter-spacing:0.3em}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-on-primary-container{--tw-text-opacity:1;color:rgb(0 29 54 / var(--tw-text-opacity, 1))}.text-on-primary-container\/90{color:rgb(0 29 54 / 0.9)}.text-on-secondary-container{--tw-text-opacity:1;color:rgb(0 31 41 / var(--tw-text-opacity, 1))}.text-on-secondary-container\/70{color:rgb(0 31 41 / 0.7)}.text-on-surface{--tw-text-opacity:1;color:rgb(26 28 30 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(68 71 78 / var(--tw-text-opacity, 1))}.text-on-surface-variant\/40{color:rgb(68 71 78 / 0.4)}.text-on-surface-variant\/50{color:rgb(68 71 78 / 0.5)}.text-on-surface\/70{color:rgb(26 28 30 / 0.7)}.text-primary{--tw-text-opacity:1;color:rgb(0 95 175 / var(--tw-text-opacity, 1))}.text-primary-fixed{--tw-text-opacity:1;color:rgb(219 225 255 / var(--tw-text-opacity, 1))}.text-primary\/40{color:rgb(0 95 175 / 0.4)}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/70{color:rgb(255 255 255 / 0.7)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-20{opacity:0.2}.opacity-40{opacity:0.4}.opacity-5{opacity:0.05}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-1000{transition-duration:1000ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-primary\/20:hover{border-color:rgb(0 95 175 / 0.2)}.hover\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(0 95 175 / var(--tw-bg-opacity, 1))}.hover\:bg-primary\/\[0\.02\]:hover{background-color:rgb(0 95 175 / 0.02)}.hover\:text-primary:hover{--tw-text-opacity:1;color:rgb(0 95 175 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.group:hover .group-hover\:-translate-y-2{--tw-translate-y:-0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:rotate-90{--tw-rotate:90deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-primary\/10{background-color:rgb(0 95 175 / 0.1)}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:col-span-4{grid-column:span 4 / span 4}.md\:col-span-8{grid-column:span 8 / span 8}.md\:flex{display:flex}.md\:min-h-\[750px\]{min-height:750px}.md\:w-1\/2{width:50%}.md\:w-1\/3{width:33.333333%}.md\:w-2\/3{width:66.666667%}.md\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:p-24{padding:6rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-inset-4{inset:-1rem}.inset-0{inset:0px}.-bottom-8{bottom:-2rem}.-left-6{left:-1.5rem}.-right-8{right:-2rem}.-top-6{top:-1.5rem}.right-0{right:0px}.top-0{top:0px}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-14{margin-bottom:3.5rem}.mb-2{margin-bottom:0.5rem}.mb-20{margin-bottom:5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mb-auto{margin-bottom:auto}.ml-auto{margin-left:auto}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-20{margin-top:5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-auto{margin-top:auto}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-\[3\/4\]{aspect-ratio:3/4}.aspect-\[4\/5\]{aspect-ratio:4/5}.aspect-video{aspect-ratio:16 / 9}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-auto{height:auto}.h-full{height:100%}.min-h-\[921px\]{min-height:921px}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-10{gap:2.5rem}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-2{gap:0.5rem}.gap-24{gap:6rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:2rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-l-8{border-left-width:8px}.border-t{border-top-width:1px}.border-primary{--tw-border-opacity:1;border-color:rgb(0 95 175 / var(--tw-border-opacity, 1))}.border-primary\/10{border-color:rgb(0 95 175 / 0.1)}.border-primary\/5{border-color:rgb(0 95 175 / 0.05)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-surface{--tw-bg-opacity:1;background-color:rgb(248 251 255 / var(--tw-bg-opacity, 1))}.bg-\[\#002366\]{--tw-bg-opacity:1;background-color:rgb(0 35 102 / var(--tw-bg-opacity, 1))}.bg-\[\#f8fbff\]\/80{background-color:rgb(248 251 255 / 0.8)}.bg-on-primary-container\/10{background-color:rgb(0 29 54 / 0.1)}.bg-primary{--tw-bg-opacity:1;background-color:rgb(0 95 175 / var(--tw-bg-opacity, 1))}.bg-primary-container{--tw-bg-opacity:1;background-color:rgb(209 228 255 / var(--tw-bg-opacity, 1))}.bg-primary\/10{background-color:rgb(0 95 175 / 0.1)}.bg-primary\/20{background-color:rgb(0 95 175 / 0.2)}.bg-primary\/5{background-color:rgb(0 95 175 / 0.05)}.bg-secondary-container{--tw-bg-opacity:1;background-color:rgb(209 228 255 / var(--tw-bg-opacity, 1))}.bg-surface-container{--tw-bg-opacity:1;background-color:rgb(239 241 243 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/40{background-color:rgb(255 255 255 / 0.4)}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-primary{--tw-gradient-from:#005faf var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 95 175 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-secondary{--tw-gradient-to:#535f70 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-10{padding:2.5rem}.p-16{padding:4rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-14{padding-left:3.5rem;padding-right:3.5rem}.px-20{padding-left:5rem;padding-right:5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-32{padding-top:8rem;padding-bottom:8rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-40{padding-top:10rem;padding-bottom:10rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pt-10{padding-top:2.5rem}.text-center{text-align:center}.font-body{font-family:Manrope}.font-headline{font-family:Plus Jakarta Sans}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-9xl{font-size:8rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[1\.1\]{line-height:1.1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-\[0\.3em\]{letter-spacing:0.3em}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-on-surface{--tw-text-opacity:1;color:rgb(26 28 30 / var(--tw-text-opacity, 1))}.text-on-primary-container{--tw-text-opacity:1;color:rgb(0 29 54 / var(--tw-text-opacity, 1))}.text-on-primary-container\/90{color:rgb(0 29 54 / 0.9)}.text-on-secondary-container{--tw-text-opacity:1;color:rgb(0 31 41 / var(--tw-text-opacity, 1))}.text-on-secondary-container\/70{color:rgb(0 31 41 / 0.7)}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(68 71 78 / var(--tw-text-opacity, 1))}.text-on-surface-variant\/40{color:rgb(68 71 78 / 0.4)}.text-on-surface-variant\/50{color:rgb(68 71 78 / 0.5)}.text-on-surface\/70{color:rgb(26 28 30 / 0.7)}.text-primary{--tw-text-opacity:1;color:rgb(0 95 175 / var(--tw-text-opacity, 1))}.text-primary-fixed{--tw-text-opacity:1;color:rgb(219 225 255 / var(--tw-text-opacity, 1))}.text-primary\/40{color:rgb(0 95 175 / 0.4)}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/70{color:rgb(255 255 255 / 0.7)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-20{opacity:0.2}.opacity-40{opacity:0.4}.opacity-5{opacity:0.05}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-1000{transition-duration:1000ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-primary\/20:hover{border-color:rgb(0 95 175 / 0.2)}.hover\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(0 95 175 / var(--tw-bg-opacity, 1))}.hover\:bg-primary\/\[0\.02\]:hover{background-color:rgb(0 95 175 / 0.02)}.hover\:text-primary:hover{--tw-text-opacity:1;color:rgb(0 95 175 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.group:hover .group-hover\:-translate-y-2{--tw-translate-y:-0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:rotate-90{--tw-rotate:90deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-primary\/10{background-color:rgb(0 95 175 / 0.1)}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:col-span-4{grid-column:span 4 / span 4}.md\:col-span-8{grid-column:span 8 / span 8}.md\:flex{display:flex}.md\:min-h-\[750px\]{min-height:750px}.md\:w-1\/2{width:50%}.md\:w-1\/3{width:33.333333%}.md\:w-2\/3{width:66.666667%}.md\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:p-24{padding:6rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}</style></head>
+<body class="bg-surface text-on-surface" data-mode="connect">
+<!-- Top Navigation Bar -->
+<header class="w-full sticky top-0 z-50 bg-[#f8fbff]/80 backdrop-blur-xl border-b border-primary/5">
+<nav class="flex items-center justify-between max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-bold tracking-tighter text-primary flex items-center gap-2">
+<img src="./logo.png" alt="Wisdom Logo" class="w-14 h-14 object-contain">
+                WISDOM
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-bold text-on-surface tracking-wide uppercase">
+                <a href="#core-values" class="nav-link hover:text-primary transition-colors">Core Values</a>
+                <a href="#director" class="nav-link hover:text-primary transition-colors">Director</a>
+                <a href="#programs" class="nav-link hover:text-primary transition-colors">Philosophy</a>
+            </div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[calc(100vh-80px)] flex flex-col justify-center items-center px-8 py-10 text-center overflow-hidden" data-stitch-vh="min-h-[calc(100vh-80px)]===min-h-[90vh]">
+<div class="absolute inset-0 z-0">
+<img alt="Abstract Knowledge Illustration" class="w-full h-full object-cover scale-105 opacity-50" src="./hero-bg.png" style="transform: scale(1.05) translateY(50.375px);"/>
+<div class="absolute inset-0 soft-overlay"></div>
+</div>
+<div class="relative z-10 max-w-5xl reveal">
+<span class="inline-block py-2 px-6 mb-6 rounded-full border-2 border-primary bg-primary text-white text-sm font-extrabold tracking-[0.2em] uppercase shadow-lg backdrop-blur-sm">Intellectual Luxury Archive</span>
+<h1 class="font-headline text-5xl md:text-8xl font-extrabold text-on-surface tracking-tight leading-[1.1] mb-8">
+<span class="reveal-word block mb-1 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">전환의 시대,</span>
+<span class="reveal-word block">판을 읽는 안목</span>
+</h1>
+<p class="text-base md:text-lg text-on-surface-variant font-medium mb-6 reveal">
+과거의 잣대로는 설명할 수 없는 불확실한 시대.<br/>
+단순한 지식을 넘어 <strong class="text-on-surface font-extrabold text-primary">시대를 관통하는 강력한 도구</strong>, 위즈덤 아카이브가 당신만의 길을 제시합니다.
+</p>
+
+<div class="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-8 reveal text-left max-w-4xl mx-auto">
+<div class="flex-1 bg-white/40 backdrop-blur-md px-5 py-4 rounded-xl border border-white/50 shadow-sm hover:-translate-y-1 transition-transform">
+<h3 class="font-bold text-on-surface text-sm mb-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">explore</span> 미래 전망 강연</h3>
+<p class="text-xs text-on-surface-variant font-medium whitespace-nowrap break-keep">혼란 속에서 길을 찾는 명확한 안내서</p>
+</div>
+<div class="flex-1 bg-white/40 backdrop-blur-md px-5 py-4 rounded-xl border border-white/50 shadow-sm hover:-translate-y-1 transition-transform">
+<h3 class="font-bold text-on-surface text-sm mb-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">visibility</span> 깊은 통찰</h3>
+<p class="text-xs text-on-surface-variant font-medium whitespace-nowrap break-keep">시대의 흐름을 읽어내는 압도적인 안목</p>
+</div>
+<div class="flex-1 bg-white/40 backdrop-blur-md px-5 py-4 rounded-xl border border-white/50 shadow-sm hover:-translate-y-1 transition-transform">
+<h3 class="font-bold text-on-surface text-sm mb-1 flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">account_balance</span> 강력한 도구</h3>
+<p class="text-xs text-on-surface-variant font-medium whitespace-nowrap break-keep">고전과 과학을 아우르는 완벽한 해석력</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row justify-center gap-6 reveal">
+<a href="#core-values" class="inline-block bg-primary text-white px-12 py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all">커리큘럼 탐색</a>
+</div>
+</div>
+</section>
+<!-- Core Values Section -->
+<section id="core-values" class="py-32 px-8 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative group reveal">
+<div class="absolute -top-6 -left-6 w-full h-full bg-primary/5 rounded-xl transition-transform group-hover:scale-105"></div>
+<img alt="Inspiring workspace with natural light" class="rounded-xl relative z-10 w-full object-cover aspect-[4/5] shadow-2xl transition-all duration-1000" src="./section2.png"/>
+<div class="absolute -bottom-8 -right-8 p-8 bg-white/90 backdrop-blur-md border border-primary/5 rounded-xl shadow-2xl z-20 max-w-sm transition-transform duration-500 group-hover:-translate-y-2">
+<h3 class="font-headline text-xl font-bold text-primary mb-4">Our Mission</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed font-medium">
+                            우리는 정보의 홍수 속에서 잊혀가는 ‘깊은 사고’를 복원하기 위해 시작되었습니다. 시대를 해석하는 통찰력으로 당신의 미래를 재설계합니다.
+                        </p>
+</div>
+</div>
+<div class="flex flex-col gap-16 reveal">
+<div>
+<div class="w-16 h-1.5 bg-primary/20 rounded-full mb-8"></div>
+<h2 class="font-headline text-5xl font-extrabold text-on-surface mb-8 tracking-tight leading-tight">핵심 가치: <br/><span class="text-primary">본질에 집중하는 힘</span></h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-10 font-medium">
+                            Wisdom Archive는 시대를 해석하는 통찰력을 바탕으로 교육을 설계합니다. 우리는 삶을 관통하는 세 가지 핵심 기둥을 제공합니다.
+                        </p>
+<div class="grid grid-cols-1 gap-6">
+<div class="p-6 rounded-xl bg-white border border-primary/5 hover:border-primary/20 hover:bg-primary/[0.02] transition-all duration-500 shadow-sm group flex gap-6 items-start">
+<div class="w-12 h-12 flex-shrink-0 bg-primary/5 rounded-xl flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">menu_book</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-2 text-lg">Intellectual Luxury</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed font-medium">단순한 지식 습득을 넘어, 혼란스러운 시대의 판을 읽는 고차원적 안목과 통찰을 공유합니다.</p>
+</div>
+</div>
+<div class="p-6 rounded-xl bg-white border border-primary/5 hover:border-primary/20 hover:bg-primary/[0.02] transition-all duration-500 shadow-sm group flex gap-6 items-start">
+<div class="w-12 h-12 flex-shrink-0 bg-primary/5 rounded-xl flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">psychology</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-2 text-lg">Living Wisdom</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed font-medium">고전과 현대 과학의 정수를 현대인의 심리학으로 재해석하여, 삶에 즉시 적용 가능한 언어로 전달합니다.</p>
+</div>
+</div>
+<div class="p-6 rounded-xl bg-white border border-primary/5 hover:border-primary/20 hover:bg-primary/[0.02] transition-all duration-500 shadow-sm group flex gap-6 items-start">
+<div class="w-12 h-12 flex-shrink-0 bg-primary/5 rounded-xl flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">brush</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-2 text-lg">Life Curation</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed font-medium">삶을 하나의 작품으로 바라보며, 본질적인 가치를 발견하고 미래의 흐름을 함께 기획합니다.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary/5 p-10 rounded-xl border-l-8 border-primary relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5">
+<span class="material-symbols-outlined text-9xl">format_quote</span>
+</div>
+<p class="relative z-10 text-primary text-xl italic font-semibold leading-relaxed">
+                            "진정한 배움은 정답을 찾는 것이 아니라, <br/>삶이 더 나은 방향을 설계하는 과정입니다."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Director Introduction Section -->
+<section id="director" class="py-32 px-8 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 reveal">
+<div class="w-full md:w-1/3">
+<div class="relative">
+<div class="absolute -inset-4 border-2 border-primary/10 rounded-2xl"></div>
+<div class="aspect-[3/4] rounded-xl overflow-hidden shadow-2xl bg-surface-container">
+<img alt="Wisdom Archive Senior Director" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="./section3.png"/>
+</div>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<span class="text-primary font-bold text-xs tracking-widest uppercase mb-4 block">Meet Our Leader</span>
+<h2 class="font-headline text-5xl font-extrabold text-on-surface mb-8 tracking-tighter">Wisdom Archive Senior Director</h2>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-4 text-xl font-medium text-on-surface">
+<span class="w-2 h-2 bg-primary rounded-full"></span>
+                            현) 위즈덤 아카이브 수석 디렉터
+                        </li>
+<li class="flex items-center gap-4 text-xl font-medium text-on-surface">
+<span class="w-2 h-2 bg-primary rounded-full"></span>
+                            현) 인문학 및 경전 통합 교육 전문 강사
+                        </li>
+<li class="flex items-center gap-4 text-xl font-medium text-on-surface">
+<span class="w-2 h-2 bg-primary rounded-full"></span>
+                            현) 한국 자기계발코칭연구소 주임강사
+                        </li>
+</ul>
+<div class="p-10 bg-primary/5 rounded-2xl border border-primary/10">
+<p class="text-2xl text-primary font-bold italic leading-relaxed">
+                            "고전의 지혜를 삶에 맞게 재해석하고, <br/>현대의 언어로 되살리는 연구를 지속해왔습니다."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Program Highlights (Bento Grid) -->
+<section id="programs" class="py-32 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal">
+<div class="max-w-2xl">
+<span class="text-primary font-bold text-xs tracking-widest uppercase mb-4 block">Academic Excellence</span>
+<h2 class="font-headline text-6xl font-extrabold text-on-surface mb-6 tracking-tighter">Lecture Philosophy</h2>
+<p class="text-on-surface-variant text-lg font-medium">당신의 삶을 작품으로 만드는 '살아있는 언어'의 기록.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:min-h-[750px]">
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-primary-container p-16 flex flex-col justify-end text-on-primary-container reveal hover-card">
+<img alt="Atmospheric old library with light streaming through windows" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9732w2VI40krxLq4OYsQt-l7cV4ZjaAzrKkyPPpgBpJKvNS43E8_YggERL35AG0GkxxS0MzY2QanJQDXgzOEpnjx8oHL3vjMya2gjzksLjFQOQpDhnbK70sq4nZqGPKT-6Yhh6Ya4_PBEWRfwj0cdU_9-OIA-wPLAHmlDEe-pV86h5-XvH1teAs0c2n3H9UHhw1Z6M8bmu6a05KLiaYQtJhhD61oDWVyU7Tqub7BoZRKz--CTzV3GW9XwkacIG9xjbJID1zukpJ4"/>
+<div class="relative z-10 bg-on-primary-container/10 backdrop-blur-sm p-8 rounded-xl border border-white/10">
+<span class="px-4 py-1.5 bg-white/40 backdrop-blur-md text-primary text-[11px] font-bold rounded-full border border-white/20 tracking-wider">RE-INTERPRETATION</span>
+<h3 class="font-headline text-4xl md:text-5xl font-bold mt-6 mb-6 leading-tight">고전의 현대적 재해석</h3>
+<p class="text-on-primary-container/90 max-w-md text-lg font-medium">딱딱한 경전 속 문장들을 현대인의 심리학과 철학으로 풀어내어, 당신의 삶에 즉시 적용 가능한 지혜를 전달합니다.</p>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-white border border-primary/5 p-10 flex flex-col reveal hover-card shadow-sm">
+<div class="mb-auto">
+<span class="px-3 py-1 bg-primary/5 text-primary text-[10px] font-bold rounded-full tracking-wider border border-primary/10 uppercase">LIVING LANGUAGE</span>
+<h3 class="font-headline text-3xl font-bold text-on-surface mt-6 mb-4">살아있는 언어</h3>
+<p class="text-on-surface-variant text-sm mb-8 font-medium leading-relaxed">단순한 지식 전달을 넘어, 당신의 삶이 하나의 작품이 되도록 방향성과 흐름을 제안하는 ‘살아있는 언어’를 공유합니다.</p>
+</div>
+<div class="relative rounded-xl overflow-hidden aspect-video">
+<img alt="Minimalist abstract art representing flow and direction" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA4KHtUvxVzMjynwF7v4bqRVXDYpBGRJZ2NJiOTpn6bfr0EspSoMiCgwDRqObNuv6vbuLLYfWItz2YGFZBDeblqGeRgVn-9IGMrqGjhKRs6YAwHuOjt5O2jn9EHe06DY_OqMDLMBQefRB04g9rq51nGJ7FAYUMJ8dPZxncQ1uiL5u8j5NrHbANQ2Ok5wT2Ym661sLcQQ9BzToMP_ZQtbiIepkcm2w9splVmtQuC0H-6ULTXybWC0zoEdx_IWII_tpJD9s3PJzw-YM"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-secondary-container p-10 flex flex-col justify-between reveal hover-card">
+<img alt="Personal journal and artifacts on a desk" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGBJE9aSaZPWMhyYs-4ilZzBSjYfc5AUHUQ2DSak0hdta7UcofUTjhAkOxgh5GWsIcUdwOp9cI7N5QcBFx69mFw53e5DT57xPswG-ZoAA5nzL89SLzJQM2nMnNZB9SKQxlpDbKSgfrz5fgSrGYqLUoN7cITT-g8VUwYSt0pXhEra5fAairPI9aE-W-uRDdrI4YdBIKFjVYGzsXsngMri8CcvGUjX1xc0r-VsjILtSHaUpo2lEM3O1pGfP6xY981klV2ZP1Oz5zQiU"/>
+<div class="relative z-10">
+<h3 class="font-headline text-3xl font-bold text-on-secondary-container italic">창조적 아카이빙 (DISCOVERY)</h3>
+<p class="text-on-secondary-container/70 mt-4 text-sm font-medium"><div><span style="font-size: 0.875rem; letter-spacing: 0.01em;">개개인의 삶을 깊이 들여다보고 그 안의 숨겨진 본질과 가치를 발견하여, 기록 이상의 변화를 만듭니다.</span></div></p>
+</div>
+<div class="relative z-10 flex justify-between items-center mt-12">
+<span class="text-[10px] font-bold text-on-secondary-container tracking-widest uppercase">DISCOVERY</span>
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-lg group-hover:rotate-90 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary">add</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-white border border-primary/5 p-16 flex flex-col md:flex-row gap-12 items-center reveal hover-card shadow-sm">
+<div class="flex-1">
+<span class="text-primary font-bold text-[10px] tracking-[0.2em] uppercase">DIRECTING</span>
+<h3 class="font-headline text-4xl font-bold text-on-surface mt-6 mb-6">디렉팅</h3>
+<p class="text-on-surface-variant text-lg font-medium leading-relaxed">우리는 단순한 강사가 아닙니다. <br/>당신의 삶을 함께 설계하고, 고유한 스토리의 흐름을 함께 기획하는 콘텐츠 디렉터로서 존재합니다.</p>
+<button class="mt-10 px-10 py-4 bg-primary/5 text-primary rounded-xl font-bold hover:bg-primary hover:text-white transition-all border border-primary/10">자세히 보기</button>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="blob-shape bg-primary/10 absolute -inset-4 z-0"></div>
+<img alt="Modern workspace with sketches and planning tools" class="relative z-10 w-full h-full object-cover rounded-xl shadow-xl transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2epjLsCG6-gjaIsxlLlfTGbYSwiutbO6nNyAJh0gEOz0ECU0ghFtTngtS4dLeI9YenZ7WxLR-3dRiIrs3M43BxecX1XLux0xLbFwkiilM4ssHXjrOBP-gBXL-Ste3oP-HXmAv2M-nDcECT8M9Y-C2gLq_s-BGXKqK0tEb3kAbiu9t5XZW1GWXOcGL8pNLCO1KGXwBG6NZ_DCD6gcBIu1fUOTE6EIRjWOFfI4yVrm3_fbfSj91hdrXkTncdTlbXWDba3BDeyZb_xA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-40 px-8">
+<div class="max-w-6xl mx-auto bg-[#002366] rounded-xl p-16 md:p-24 text-center relative overflow-hidden shadow-2xl reveal">
+<div class="relative z-10">
+<h2 class="font-headline text-5xl md:text-6xl font-extrabold text-white mb-10 leading-tight">당신의 지적 아카이브를<br/><span class="text-primary-fixed italic">지금 시작하세요.</span></h2>
+<p class="text-white/70 text-sm sm:text-base md:text-xl mb-14 mx-auto font-medium whitespace-nowrap break-keep">Wisdom Archive의 독창적인 커리큘럼은 오직 당신만을 위한 지적 성장을 보장합니다.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button onclick="openModal()" class="bg-primary text-white px-20 py-6 rounded-xl font-bold text-xl shadow-xl hover:scale-105 transition-transform">문의하기</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-8 mt-auto bg-white border-t border-primary/5 reveal">
+<div class="max-w-7xl mx-auto flex flex-col items-center gap-12">
+<div class="flex flex-col items-center gap-10 text-center">
+<div class="flex flex-col items-center">
+<div class="font-headline font-bold text-primary text-3xl mb-6 tracking-tighter flex items-center gap-3"><img src="./logo.png" alt="Wisdom Logo" class="w-16 h-16 object-contain">
+                        WISDOM ARCHIVE
+                    </div>
+<div class="flex gap-10 justify-center">
+<a class="text-on-surface-variant/50 hover:text-primary text-xs font-bold transition-colors uppercase tracking-widest cursor-pointer" onclick="openModal('privacyModal')">Privacy Policy</a>
+<a class="text-on-surface-variant/50 hover:text-primary text-xs font-bold transition-colors uppercase tracking-widest cursor-pointer" onclick="openModal('termsModal')">Terms of Service</a>
+</div>
+</div>
+<div class="flex gap-8 justify-center">
+<span class="material-symbols-outlined text-primary/40 cursor-pointer hover:text-primary transition-all hover:scale-110" title="Language">language</span>
+<span class="material-symbols-outlined text-primary/40 cursor-pointer hover:text-primary transition-all hover:scale-110" title="Share">share</span>
+<span class="material-symbols-outlined text-primary/40 cursor-pointer hover:text-primary transition-all hover:scale-110" title="Email">alternate_email</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-primary/5 text-center">
+<p class="text-on-surface-variant/40 text-[10px] font-bold tracking-[0.3em] uppercase antialiased">Copyright ⓒ 2026 WISDOM ARCHIVE<span class="" style="letter-spacing: 0.3em;"> All rights reserved.</span></p>
+</div>
+</footer>
+<script>
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -40px 0px"
+        };
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        const words = document.querySelectorAll('.reveal-word');
+        words.forEach((word, index) => {
+            setTimeout(() => {
+                word.classList.add('active');
+            }, 300 + (index * 250));
+        });
+
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroBg = document.querySelector('section img');
+            if (heroBg && scrolled < window.innerHeight) {
+                heroBg.style.transform = `scale(1.05) translateY(${scrolled * 0.05}px)`;
+            }
+        });
+    </script>
+    <div id="contactModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="absolute inset-0 bg-[#001d36]/40 backdrop-blur-md" onclick="closeModal()"></div>
+        <div class="relative z-10 w-full max-w-xl bg-white rounded-3xl shadow-2xl max-h-[90vh] overflow-y-auto overflow-x-hidden transform scale-95 transition-transform duration-300">
+            <div class="p-8 md:p-12">
+                <div class="flex justify-between items-center mb-10">
+                    <h3 class="font-headline text-3xl font-extrabold text-on-surface tracking-tight">문의하기</h3>
+                    <button onclick="closeModal()" class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">close</button>
+                </div>
+                <form class="space-y-6" onsubmit="event.preventDefault(); alert('문의가 접수되었습니다.'); closeModal();">
+                    <div>
+                        <label class="block text-sm font-bold text-on-surface-variant mb-2">성함</label>
+                        <input type="text" placeholder="성함을 입력해주세요" required class="w-full px-5 py-4 rounded-xl border border-primary/10 focus:border-primary outline-none transition-colors font-medium">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-on-surface-variant mb-2">연락처</label>
+                        <input type="tel" placeholder="010-0000-0000" required class="w-full px-5 py-4 rounded-xl border border-primary/10 focus:border-primary outline-none transition-colors font-medium">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-on-surface-variant mb-2">문의내용</label>
+                        <textarea rows="4" placeholder="궁금하신 내용을 입력해주세요" required class="w-full px-5 py-4 rounded-xl border border-primary/10 focus:border-primary outline-none transition-colors font-medium resize-none"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-on-surface-variant mb-2">개인정보 수집 및 이용 동의</label>
+                        <div class="w-full h-32 overflow-y-auto px-5 py-4 rounded-xl border border-primary/10 bg-surface-container-low text-xs text-on-surface-variant leading-relaxed font-medium mb-3">
+                            <p class="mb-4">위즈덤 아카이브(이하 ‘회사’라 한다)는 개인정보 보호법 제30조에 따라 정보 주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리지침을 수립, 공개합니다.</p>
+                            
+                            <p class="font-bold mb-1">제1조 (개인정보의 처리목적)</p>
+                            <p class="mb-4">회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.<br>
+                            1. 홈페이지 회원 가입 및 관리<br>
+                            회원 가입 의사 확인, 회원제 서비스 제공에 따른 본인 식별․인증, 회원자격 유지․관리, 제한적 본인확인제 시행에 따른 본인확인, 서비스 부정 이용 방지, 만 14세 미만 아동의 개인정보처리 시 법정대리인의 동의 여부 확인, 각종 고지․통지, 고충 처리 등을 목적으로 개인정보를 처리합니다.<br>
+                            2. 재화 또는 서비스 제공<br>
+                            물품 배송, 서비스 제공, 계약서 및 청구서 발송, 콘텐츠 제공, 맞춤서비스 제공, 본인인증, 연령인증, 요금 결제 및 정산, 채권추심 등을 목적으로 개인정보를 처리합니다.<br>
+                            3. 고충 처리<br>
+                            민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락․통지, 처리 결과 통보 등의 목적으로 개인정보를 처리합니다.</p>
+
+                            <p class="font-bold mb-1">제2조 (개인정보의 처리 및 보유기간)</p>
+                            <p class="mb-4">① 회사는 법령에 따른 개인정보 보유, 이용 기간 또는 정보주체로부터 개인정보를 수집 시에 동의 받은 개인정보 보유, 이용 기간 내에서 개인정보를 처리, 보유합니다.<br>
+                            ② 각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.<br>
+                            1. 홈페이지 회원 가입 및 관리 : 사업자/단체 홈페이지 탈퇴 시까지<br>
+                            다만, 다음의 사유에 해당하는 경우에는 해당 사유 종료 시까지<br>
+                            1) 관계 법령 위반에 따른 수사, 조사 등이 진행 중인 경우에는 해당 수사, 조사 종료 시까지<br>
+                            2) 홈페이지 이용에 따른 채권 및 채무관계 잔존 시에는 해당 채권, 채무 관계 정산 시까지</p>
+
+                            <p class="font-bold mb-1">제3조(처리하는 개인정보 항목)</p>
+                            <p class="mb-4">회사는 다음의 개인정보 항목을 처리하고 있습니다.<br>
+                            1. 홈페이지 회원 가입 및 관리<br>
+                            필수항목 : 성명, 전화번호<br>
+                            선택항목 :<br>
+                            2. 재화 또는 서비스 제공<br>
+                            필수항목 : 성명, 전화번호<br>
+                            선택항목 :</p>
+
+                            <p class="font-bold mb-1">제7조(개인정보의 파기)</p>
+                            <p class="mb-4">① 회사는 개인정보 보유 기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br>
+                            ② 정보주체로부터 동의받은 개인정보 보유 기간이 경과하거나 처리목적이 달성되었음에도 불구하고 다른 법령에 따라 개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 보존합니다.<br>
+                            ③ 개인정보 파기의 절차 및 방법은 다음과 같습니다.<br>
+                            1. 파기 절차<br>
+                            회사는 파기 사유가 발생한 개인정보를 선정하고, 회사의 개인정보 보호책임자의 승인을 받아 개인정보를 파기합니다.<br>
+                            2. 파기 방법<br>
+                            회사는 전자적 파일 형태로 기록․저장된 개인정보는 기록을 재생할 수 없도록 파기하며, 종이 문서에 기록․저장된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.</p>
+
+                            <p class="font-bold mb-1">제8조(개인정보의 안전성 확보조치)</p>
+                            <p class="mb-4">회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 하고 있습니다.<br>
+                            1. 관리적 조치 : 내부관리계획 수립 및 시행, 정기적 직원 교육 등<br>
+                            2. 기술적 조치 : 개인정보처리시스템 등의 접근 권한 관리, 접근통제시스템 설치, 고유 식별정보 등의 암호화, 보안프로그램 설치<br>
+                            3. 물리적 조치 : 전산실, 자료보관실 등의 접근통제</p>
+
+                            <p class="font-bold mb-1">제9조(개인정보 자동 수집 장치의 설치∙운영 및 거부에 관한 사항)</p>
+                            <p class="mb-4">① 회사는 이용자에게 개별적인 맞춤 서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용합니다.<br>
+                            ② 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에 보내는 소량의 정보이며 이용자들의 PC 또는 모바일에 저장됩니다.<br>
+                            ③ 정보주체는 웹 브라우저 옵션 설정을 통해 쿠키 허용, 차단 등의 설정을 할 수 있습니다. 다만, 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.<br>
+                            ▶ 웹 브라우저에서 쿠키 허용/차단<br>
+                            - 크롬(Chrome) : 웹 브라우저 설정 > 개인정보 보호 및 보안 > 인터넷 사용기록 삭제<br>
+                            - 엣지(Edge) : 웹 브라우저 설정 > 쿠키 및 사이트 권한 > 쿠키 및 사이트 데이터 관리 및 삭제<br>
+                            ▶ 모바일 브라우저에서 쿠키 허용/차단<br>
+                            - 크롬(Chrome) : 모바일 브라우저 설정 > 개인정보 보호 및 보안 > 인터넷 사용기록 삭제<br>
+                            - 사파리(Safari) : 모바일 기기 설정 > 사파리(Safari) > 고급 > 모든 쿠키 차단<br>
+                            - 삼성 인터넷 : 모바일 브라우저 설정 > 인터넷 사용 기록 > 인터넷 사용 기록 삭제<br>
+                            ④ 회사는 서비스 이용과정에서 사용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기 검색어, 보안접속 여부 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 수집・이용하고 있습니다.</p>
+
+                            <p class="font-bold mb-1">제10조(개인정보 보호책임자)</p>
+                            <p class="mb-4">① 회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.<br>
+                            ▶ 개인정보 보호책임자<br>
+                            성명, 직책, 연락처 : 대표자와 동일<br>
+                            ※ 개인정보 보호 담당부서로 연결됩니다.<br>
+                            ▶ 개인정보 보호 담당부서<br>
+                            성명, 직책, 연락처 : 대표자와 동일<br>
+                            ② 정보주체께서는 회사의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만 처리, 피해구제 등에 관한 사항을 개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다. 회사는 정보주체의 문의에 대해 지체없이 답변 및 처리해드릴 것입니다.</p>
+
+                            <p class="font-bold mb-1">제11조(개인정보 열람청구)</p>
+                            <p class="mb-4">정보주체는 개인정보 보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다. 회사는 정보주체의 개인정보 열람 청구가 신속하게 처리되도록 노력하겠습니다.<br>
+                            ▶ 개인정보 열람청구 접수․처리 부서<br>
+                            성명, 직책, 연락처 : 대표자와 동일</p>
+
+                            <p class="font-bold mb-1">제12조(권익침해 구제 방법)</p>
+                            <p class="mb-4">정보주체는 아래의 기관에 대해 개인정보 침해에 대한 피해구제, 상담 등을 문의하실 수 있습니다.<br>
+                            1. 개인정보 분쟁조정위원회 : (국번없이) 1833-6972 (www.kopico.go.kr)<br>
+                            2. 개인정보침해신고센터 : (국번없이) 118 (privacy.kisa.or.kr)<br>
+                            3. 대검찰청 : (국번없이) 1301 (www.spo.go.kr)<br>
+                            4. 경찰청 : (국번없이) 182 (ecrm.police.go.kr/minwon/main)</p>
+
+                            <p class="font-bold mb-1">제13조(개인정보 처리방침 시행 및 변경)</p>
+                            <p>이 개인정보 처리방침은 2026. 3. 1. 부터 적용됩니다.</p>
+                        </div>
+                        <div class="flex items-center gap-3 py-2">
+                            <input type="checkbox" id="privacy" required class="w-5 h-5 rounded border-primary/20 text-primary focus:ring-primary">
+                            <label for="privacy" class="text-sm text-on-surface-variant font-medium cursor-pointer">개인정보 수집 및 이용에 동의합니다</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white py-5 rounded-xl font-bold text-lg shadow-xl hover:bg-primary/90 transition-all mt-4">문의 신청 완료</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="absolute inset-0 bg-[#001d36]/40 backdrop-blur-md" onclick="closeModal('privacyModal')"></div>
+        <div class="relative z-10 w-full max-w-3xl bg-white rounded-3xl shadow-2xl max-h-[90vh] flex flex-col transform scale-95 transition-transform duration-300">
+            <div class="p-8 border-b border-primary/10 flex justify-between items-center">
+                <h3 class="font-headline text-2xl font-extrabold text-on-surface tracking-tight">개인정보 처리방침 (Privacy Policy)</h3>
+                <button onclick="closeModal('privacyModal')" class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">close</button>
+            </div>
+            <div class="p-8 overflow-y-auto text-sm text-on-surface-variant leading-relaxed font-medium">
+                <p class="font-bold text-primary mb-6">시행일: 2026. 03. 01</p>
+                <p class="mb-6">위즈덤 아카이브(이하 ‘회사’라 한다)는 개인정보 보호법 제30조에 따라 정보 주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리지침을 수립, 공개합니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제1조 (개인정보의 처리목적)</h4>
+                <p class="mb-6">회사는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.<br><br>
+                <span class="font-bold">1. 홈페이지 회원 가입 및 관리</span><br>
+                회원 가입 의사 확인, 회원제 서비스 제공에 따른 본인 식별․인증, 회원자격 유지․관리, 제한적 본인확인제 시행에 따른 본인확인, 서비스 부정 이용 방지, 만 14세 미만 아동의 개인정보처리 시 법정대리인의 동의 여부 확인, 각종 고지․통지, 고충 처리 등을 목적으로 개인정보를 처리합니다.<br><br>
+                <span class="font-bold">2. 재화 또는 서비스 제공</span><br>
+                물품 배송, 서비스 제공, 계약서 및 청구서 발송, 콘텐츠 제공, 맞춤서비스 제공, 본인인증, 연령인증, 요금 결제 및 정산, 채권추심 등을 목적으로 개인정보를 처리합니다.<br><br>
+                <span class="font-bold">3. 고충 처리</span><br>
+                민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락․통지, 처리 결과 통보 등의 목적으로 개인정보를 처리합니다.</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">제2조 (개인정보의 처리 및 보유기간)</h4>
+                <p class="mb-6">① 회사는 법령에 따른 개인정보 보유, 이용 기간 또는 정보주체로부터 개인정보를 수집 시에 동의 받은 개인정보 보유, 이용 기간 내에서 개인정보를 처리, 보유합니다.<br>
+                ② 각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.<br><br>
+                <span class="font-bold">1. 홈페이지 회원 가입 및 관리</span> : 사업자/단체 홈페이지 탈퇴 시까지<br>
+                다만, 다음의 사유에 해당하는 경우에는 해당 사유 종료 시까지<br>
+                1) 관계 법령 위반에 따른 수사, 조사 등이 진행 중인 경우에는 해당 수사, 조사 종료 시까지<br>
+                2) 홈페이지 이용에 따른 채권 및 채무관계 잔존 시에는 해당 채권, 채무 관계 정산 시까지</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">제3조(처리하는 개인정보 항목)</h4>
+                <p class="mb-6">회사는 다음의 개인정보 항목을 처리하고 있습니다.<br><br>
+                <span class="font-bold">1. 홈페이지 회원 가입 및 관리</span><br>
+                필수항목 : 성명, 전화번호<br>
+                선택항목 :<br><br>
+                <span class="font-bold">2. 재화 또는 서비스 제공</span><br>
+                필수항목 : 성명, 전화번호<br>
+                선택항목 :</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">제7조(개인정보의 파기)</h4>
+                <p class="mb-6">① 회사는 개인정보 보유 기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다.<br>
+                ② 정보주체로부터 동의받은 개인정보 보유 기간이 경과하거나 처리목적이 달성되었음에도 불구하고 다른 법령에 따라 개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를 별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여 보존합니다.<br>
+                ③ 개인정보 파기의 절차 및 방법은 다음과 같습니다.<br><br>
+                <span class="font-bold">1. 파기 절차</span><br>
+                회사는 파기 사유가 발생한 개인정보를 선정하고, 회사의 개인정보 보호책임자의 승인을 받아 개인정보를 파기합니다.<br><br>
+                <span class="font-bold">2. 파기 방법</span><br>
+                회사는 전자적 파일 형태로 기록․저장된 개인정보는 기록을 재생할 수 없도록 파기하며, 종이 문서에 기록․저장된 개인정보는 분쇄기로 분쇄하거나 소각하여 파기합니다.</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">제8조(개인정보의 안전성 확보조치)</h4>
+                <p class="mb-6">회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 하고 있습니다.<br>
+                1. 관리적 조치 : 내부관리계획 수립 및 시행, 정기적 직원 교육 등<br>
+                2. 기술적 조치 : 개인정보처리시스템 등의 접근 권한 관리, 접근통제시스템 설치, 고유 식별정보 등의 암호화, 보안프로그램 설치<br>
+                3. 물리적 조치 : 전산실, 자료보관실 등의 접근통제</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">제9조(개인정보 자동 수집 장치의 설치∙운영 및 거부에 관한 사항)</h4>
+                <p class="mb-6">① 회사는 이용자에게 개별적인 맞춤 서비스를 제공하기 위해 이용정보를 저장하고 수시로 불러오는 ‘쿠키(cookie)’를 사용합니다.<br>
+                ② 쿠키는 웹사이트를 운영하는데 이용되는 서버(http)가 이용자의 컴퓨터 브라우저에 보내는 소량의 정보이며 이용자들의 PC 또는 모바일에 저장됩니다.<br>
+                ③ 정보주체는 웹 브라우저 옵션 설정을 통해 쿠키 허용, 차단 등의 설정을 할 수 있습니다. 다만, 쿠키 저장을 거부할 경우 맞춤형 서비스 이용에 어려움이 발생할 수 있습니다.<br><br>
+                <span class="font-bold text-primary">▶ 웹 브라우저에서 쿠키 허용/차단</span><br>
+                - 크롬(Chrome) : 웹 브라우저 설정 > 개인정보 보호 및 보안 > 인터넷 사용기록 삭제<br>
+                - 엣지(Edge) : 웹 브라우저 설정 > 쿠키 및 사이트 권한 > 쿠키 및 사이트 데이터 관리 및 삭제<br><br>
+                <span class="font-bold text-primary">▶ 모바일 브라우저에서 쿠키 허용/차단</span><br>
+                - 크롬(Chrome) : 모바일 브라우저 설정 > 개인정보 보호 및 보안 > 인터넷 사용기록 삭제<br>
+                - 사파리(Safari) : 모바일 기기 설정 > 사파리(Safari) > 고급 > 모든 쿠키 차단<br>
+                - 삼성 인터넷 : 모바일 브라우저 설정 > 인터넷 사용 기록 > 인터넷 사용 기록 삭제<br><br>
+                ④ 회사는 서비스 이용과정에서 사용자가 방문한 각 서비스와 웹 사이트들에 대한 방문 및 이용형태, 인기 검색어, 보안접속 여부 등을 파악하여 이용자에게 최적화된 정보 제공을 위해 수집・이용하고 있습니다.</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">제10조(개인정보 보호책임자)</h4>
+                <p class="mb-6">① 회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.<br><br>
+                <span class="font-bold text-primary">▶ 개인정보 보호책임자</span><br>
+                성명, 직책, 연락처 : 대표자와 동일<br>
+                ※ 개인정보 보호 담당부서로 연결됩니다.<br><br>
+                <span class="font-bold text-primary">▶ 개인정보 보호 담당부서</span><br>
+                성명, 직책, 연락처 : 대표자와 동일<br><br>
+                ② 정보주체께서는 회사의 서비스(또는 사업)을 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만 처리, 피해구제 등에 관한 사항을 개인정보 보호책임자 및 담당부서로 문의하실 수 있습니다. 회사는 정보주체의 문의에 대해 지체없이 답변 및 처리해드릴 것입니다.</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">제11조(개인정보 열람청구)</h4>
+                <p class="mb-6">정보주체는 개인정보 보호법 제35조에 따른 개인정보의 열람 청구를 아래의 부서에 할 수 있습니다. 회사는 정보주체의 개인정보 열람 청구가 신속하게 처리되도록 노력하겠습니다.<br><br>
+                <span class="font-bold text-primary">▶ 개인정보 열람청구 접수․처리 부서</span><br>
+                성명, 직책, 연락처 : 대표자와 동일</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">제12조(권익침해 구제 방법)</h4>
+                <p class="mb-6">정보주체는 아래의 기관에 대해 개인정보 침해에 대한 피해구제, 상담 등을 문의하실 수 있습니다.<br>
+                1. 개인정보 분쟁조정위원회 : (국번없이) 1833-6972 (www.kopico.go.kr)<br>
+                2. 개인정보침해신고센터 : (국번없이) 118 (privacy.kisa.or.kr)<br>
+                3. 대검찰청 : (국번없이) 1301 (www.spo.go.kr)<br>
+                4. 경찰청 : (국번없이) 182 (ecrm.police.go.kr/minwon/main)</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">제13조(개인정보 처리방침 시행 및 변경)</h4>
+                <p>이 개인정보 처리방침은 2026. 3. 1. 부터 적용됩니다.</p>
+            </div>
+            <div class="p-6 border-t border-primary/10 flex justify-end">
+                <button onclick="closeModal('privacyModal')" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors shadow-lg">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="termsModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="absolute inset-0 bg-[#001d36]/40 backdrop-blur-md" onclick="closeModal('termsModal')"></div>
+        <div class="relative z-10 w-full max-w-3xl bg-white rounded-3xl shadow-2xl max-h-[90vh] flex flex-col transform scale-95 transition-transform duration-300">
+            <div class="p-8 border-b border-primary/10 flex justify-between items-center">
+                <h3 class="font-headline text-2xl font-extrabold text-on-surface tracking-tight">이용약관 (Terms of Service)</h3>
+                <button onclick="closeModal('termsModal')" class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">close</button>
+            </div>
+            <div class="p-8 overflow-y-auto text-sm text-on-surface-variant leading-relaxed font-medium">
+                <p class="font-bold text-primary mb-6">시행일: 사이트 개설일</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제1조 (목적)</h4>
+                <p class="mb-6">본 약관은 위즈덤 아카이브(이하 "사이트")가 제공하는 서비스의 이용조건과 운영에 관한 제반 사항 규정을 목적으로 합니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제2조 (용어의 정의)</h4>
+                <p class="mb-6">1. <span class="font-bold">회원</span>: 사이트의 약관에 동의하고 개인정보를 제공하여 회원등록을 한 자로서, 사이트와의 이용계약을 체결하고 서비스를 이용하는 이용자를 말합니다.<br>
+                2. <span class="font-bold">이용계약</span>: 서비스 이용과 관련하여 사이트와 회원 간에 체결하는 계약을 말합니다.<br>
+                3. <span class="font-bold">운영자</span>: 위즈덤 아카이브 서비스를 개설하여 운영하는 주체를 말합니다.<br>
+                4. <span class="font-bold">해지</span>: 회원이 이용계약을 해약하는 것을 말합니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제3조 (약관 외 준칙)</h4>
+                <p class="mb-6">운영자는 필요한 경우 별도로 운영정책을 공지할 수 있으며, 본 약관과 운영정책이 중첩될 경우 운영정책이 우선 적용됩니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제4조 (이용계약 체결)</h4>
+                <p class="mb-6">1. 이용계약은 가입 신청자의 약관 동의와 운영자의 이용 승낙으로 성립합니다.<br>
+                2. 가입 신청 시 "동의합니다"를 선택하는 것으로 본 약관에 대한 의사 표시를 한 것으로 간주합니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제5조 (서비스 이용 신청)</h4>
+                <p class="mb-6">1. 회원은 사이트에서 요청하는 제반 정보(아이디, 비밀번호, 닉네임 등)를 정확히 제공해야 합니다.<br>
+                2. 타인의 정보를 도용하거나 허위 정보를 등록한 경우, 사이트 이용과 관련한 권리를 주장할 수 없으며 관계 법령에 따라 처벌받을 수 있습니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제6조 (개인정보보호)</h4>
+                <p class="mb-6">1. 운영자는 관계 법령이 정하는 바에 따라 회원의 개인정보를 보호하기 위해 노력합니다. 상세 사항은 별도의 '개인정보 처리방침'을 따릅니다.<br>
+                2. 회원의 귀책 사유로 인해 노출된 정보에 대해 운영자는 일체의 책임을 지지 않습니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제7조 (운영자의 의무)</h4>
+                <p class="mb-6">1. 운영자는 이용회원의 의견이나 불만이 정당하다고 인정될 경우 신속히 처리하도록 노력합니다.<br>
+                2. 안정적인 서비스 제공을 위해 설비 장애 발생 시 지체 없이 수리 또는 복구합니다. 단, 천재지변이나 부득이한 사유가 있는 경우 서비스를 일시 정지할 수 있습니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제8조 (회원의 의무)</h4>
+                <p class="mb-6">1. 회원은 관계 법령, 본 약관 및 운영정책을 준수해야 하며 사이트의 업무 방해나 명예를 손상하는 행위를 해서는 안 됩니다.<br>
+                2. 회원은 아이디 및 비밀번호 관리에 상당한 주의를 기울여야 하며, 운영자의 동의 없이 제3자에게 아이디를 제공할 수 없습니다.<br>
+                3. 회원은 위즈덤 아카이브와 제3자의 지적 재산권을 침해해서는 안 됩니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제9조 (서비스 이용 시간 및 중단)</h4>
+                <p class="mb-6">1. 서비스는 연중무휴 24시간 제공을 원칙으로 하되, 시스템 점검이나 교체 등을 위해 일시 중단될 수 있으며 이는 사전에 공지합니다.<br>
+                2. 긴급한 시스템 점검, 국가비상사태, 서비스 폭주 등 불가항력적인 사유 발생 시 사전 예고 없이 서비스를 중단할 수 있습니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제10조 (서비스 이용 해지 및 제한)</h4>
+                <p class="mb-6">1. 회원이 계약을 해지하고자 할 경우 온라인을 통해 직접 등록 해지 신청을 해야 합니다.<br>
+                2. 회원이 타인의 정보를 도용하거나 범죄와 결부된 행위, 지적 재산권 침해 등의 행위를 할 경우 운영자는 서비스 이용을 제한하거나 계약을 해지할 수 있습니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제11조 (게시물의 관리 및 저작권)</h4>
+                <p class="mb-6">1. <span class="font-bold">저작권 귀속</span>: 회원이 게시한 게시물의 저작권은 게시자 본인에게 있습니다. 단, 사이트는 비영리 목적으로 서비스 내 게재권을 갖습니다.<br>
+                2. <span class="font-bold">이용 제한</span>: 회원은 서비스를 통해 취득한 정보를 임의 가공, 판매하거나 상업적으로 사용할 수 없습니다.<br>
+                3. <span class="font-bold">불량 게시물</span>: 타인의 명예훼손, 불법 복제 조장, 영리 목적 광고 등은 사전 통지 없이 삭제될 수 있습니다.</p>
+                
+                <h4 class="font-bold text-on-surface text-base mb-2">제12조 (손해배상 및 면책)</h4>
+                <p class="mb-6">1. 본 사이트 이용과 관련하여 발생한 민·형사상 책임은 회원 본인에게 1차적으로 있습니다.<br>
+                2. 운영자는 천재지변, 서비스 기반 시설의 장애, 회원의 귀책 사유로 인한 이용 장애 등에 대해 책임을 지지 않습니다.<br>
+                3. 운영자는 회원이 게시하거나 전송한 자료의 진위 및 신뢰도에 대해 보증하지 않으며, 회원 간 혹은 회원과 제3자 간의 거래로 발생한 손해에 대해 책임지지 않습니다.</p>
+
+                <h4 class="font-bold text-on-surface text-base mb-2">부칙</h4>
+                <p>본 약관은 사이트 개설일부터 시행됩니다.</p>
+            </div>
+            <div class="p-6 border-t border-primary/10 flex justify-end">
+                <button onclick="closeModal('termsModal')" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-primary/90 transition-colors shadow-lg">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id = 'contactModal') {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+                modal.querySelector('.relative').classList.remove('scale-95');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(id = 'contactModal') {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                modal.querySelector('.relative').classList.add('scale-95');
+                document.body.style.overflow = '';
+            }
+        }
+    </script>
+</body></html>
