@@ -3,6 +3,10 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/logo.png',
+  '/favicon.png',
+  '/favicon-48.png',
+  '/icon-192.png',
+  '/icon-512.png',
   '/hero-bg.png',
   '/section2.png',
   '/section3.png'
